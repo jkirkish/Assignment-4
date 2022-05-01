@@ -65,7 +65,13 @@ public class Student implements Comparable<Student> {
 		
 		 if(this.course == null) { return (that.course == null)?0: -1; }
 		 if(that.course == null) { return 1; }
-		 
-		
+		 if(Integer.parseInt(this.grade) >(Integer.parseInt(that.grade))) {
+			 return -1;
+		 }else if(Integer.parseInt(this.grade)==(Integer.parseInt(that.grade)))
+		 {
+			 return 0;
+		 }else {
+			 return 1;
+		 }
 	}
 }
