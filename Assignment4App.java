@@ -9,8 +9,10 @@ public class Assignment4App {
 		FileService service = new FileService();
 		service.putMasterFileIntoArray();
 		service.displaySortedArray();
-		service.filterArrayByCourses();
-		
+		service.filterCompSciStudents();
+		service.filterStatStudents();
+		service.filterApMathStudents();
+		service.writeToFile();
 	}
 }
 
