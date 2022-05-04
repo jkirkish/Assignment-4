@@ -71,7 +71,6 @@ public class FileService {
 				stats[count] = students[i];
 			}
 		}
-		System.out.println(count);
 		stats[0] = new Student("StudentID", "Student Name", "Course", "Grade");
 		for (int i = 0; i < stats.length; i++) {
 			System.out.println(stats[i]);
@@ -89,7 +88,6 @@ public class FileService {
 				math[count] = students[i];
 			}
 		}
-		System.out.println(count);
 		math[0] = new Student("StudentID", "Student Name", "Course", "Grade");
 		for (int i = 0; i < math.length; i++) {
 			System.out.println(math[i]);
@@ -138,7 +136,7 @@ public class FileService {
 				writer1.close();
 		}
 		try {
-			// write from the ma array to the course2 file
+			// write from the ma array to the course3 file
 			writer2 = new BufferedWriter(new FileWriter("course3.csv"));
 			for (Student ma : math) {
 				writer2.write(
